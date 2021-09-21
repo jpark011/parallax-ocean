@@ -43,13 +43,10 @@ header .logo {
 }
 .btns {
   position: relative;
-  width: 40px;
-  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-
   margin-left: 10px;
 }
 
@@ -59,7 +56,7 @@ header .logo {
 }
 
 .btns.menuToggle ion-icon {
-  font-size: 3rem;
+  font-size: 2.25rem;
 }
 
 .btns ion-icon:nth-child(2) {
@@ -123,7 +120,7 @@ header .logo {
 .main .sci {
   position: absolute;
   right: 3vw;
-  bottom: 3vh;
+  bottom: 2vh;
   display: flex;
   flex-direction: column;
   z-index: 4;
@@ -136,7 +133,7 @@ header .logo {
 .main .sci li a {
   text-decoration: none;
   color: var(--black);
-  font-size: 1.75rem;
+  font-size: 2.25rem;
 }
 
 .navigation {
@@ -178,16 +175,8 @@ header .logo {
   color: var(--white);
 }
 
-@media (max-width: 768ox) {
-  html {
-    font-size: 50px;
-  }
-
-  header {
-    padding: 20px;
-  }
-
-  .sci {
-    right: 20px;
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 18px;
   }
 }
